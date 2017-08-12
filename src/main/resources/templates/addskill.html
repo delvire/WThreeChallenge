@@ -5,7 +5,7 @@
     <title>Add Skill</title>
 </head>
 <body>
-<h2>Add a skill</h2>
+<h2>Add a skill, at least one is required</h2>
 <form action="#" th:action="@{/addskill}" th:object="${addskill}" method="post">
     <p>Name  <input type="text" th:field="*{name}"/>
         <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Problem with "name"</span></p>
@@ -13,6 +13,5 @@
         <span th:if="${#fields.hasErrors('rating')}" th:errors="*{rating}">Problem with "rating"</span></p>
     <p><input type="submit" value="Submit" /><input type="reset" value="Reset"/></p>
 </form>
-<a href="/adduser">Done</a>
 </body>
 </html>

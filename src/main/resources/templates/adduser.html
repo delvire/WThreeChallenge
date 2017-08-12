@@ -13,9 +13,6 @@
         <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Problem with "name"</span></p>
     <p>email address  <input type="email" th:field="*{emailaddr}"/>
         <span th:if="${#fields.hasErrors('emailaddr')}" th:errors="*{emailaddr}">Problem with "emailaddr"</span></p>
-    <p>Educational achievements  <a href="/addeducation">Add an educational achievement</a></p>
-    <p>Work experiences  <a href="/addexperience">Add a work experience</a></p>
-    <p>Skills  <a href="/addskill">Add a skill</a></p>
     <p><input type="submit" value="Submit" /><input type="reset" value="Reset"/></p>
 </form>
 <a href="/getstarted">Go back to the home page</a>
