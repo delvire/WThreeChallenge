@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+    <title>User informations</title>
+</head>
+<body>
+<h2>User informations</h2>
+<p th:text="${adduser.name}"></p>
+<p th:text="${adduser.emailaddr}"></p>
+<p th:text="'Educational achievements : '"></p><br />
+<table border="1">
+    <tr>
+        <th>DEGREE</th>
+        <th>UNIVERSITY</th>
+        <th>YEAR</th>
+    </tr>
+    <tr th:each="education : ${educationsList}" >
+        <td th:text="${adduser.educations.degree}"/>
+        <td th:text="${adduser.educations.university}"/>
+        <td th:text="${adduser.educations.year}"/>
+    </tr>
+</table>
+<p><a href="/getstarted">Go back to the home page</a></p>
+</body>
+</html>

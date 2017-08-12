@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+    <title>Educational achievement informations</title>
+</head>
+<body>
+<h2>Educational achievement informations</h2>
+<p th:text="'Degree : ' + ${addeducation.degree}"/>
+<p th:text="'University : ' + ${addeducation.university}"/>
+<p th:text="'Year : ' + ${addeducation.year}"/>
+<p><a href="/addeducation">Add another educational achievement</a></p>
+<a href="/adduser">Done</a>
+</body>
+</html>

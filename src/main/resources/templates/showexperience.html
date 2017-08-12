@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+    <title>Work experience informations</title>
+</head>
+<body>
+<h2>Work experience informations</h2>
+<p th:text="'Position : ' + ${addexperience.position}"/>
+<p th:text="'Organisation : ' + ${addexperience.organisation}"/>
+<p th:text="'Start date (MM/YYYY) : ' + ${addexperience.startdate}"/>
+<p th:text="'End date (MM/YYYY) : ' + ${addexperience.enddate}"/>
+<p th:text="'Duty1 : ' + ${addexperience.duty1}"/>
+<p th:text="'Duty2 : ' + ${addexperience.duty2}"/>
+<p><a href="/addexperience">Add another work experience</a></p>
+<a href="/adduser">Done</a>
+</body>
+</html>

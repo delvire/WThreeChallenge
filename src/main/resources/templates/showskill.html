@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
+    <title>Skill informations</title>
+</head>
+<body>
+<h2>Skill informations</h2>
+<p th:text="'Name : ' + ${addskill.name}"/>
+<p th:text="'Rating : ' + ${addskill.rating}"/>
+<p><a href="/addskill">Add another skill</a></p>
+<a href="/adduser">Done</a>
+</body>
+</html>
