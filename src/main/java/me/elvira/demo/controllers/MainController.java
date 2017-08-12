@@ -74,8 +74,8 @@ public class MainController {
         {
             return "adduser";
         }
-        userRepository.save(user);
-        return "showuser";
+        //userRepository.save(user);
+        return "addeducation";
     }
     @PostMapping("/addeducation")
     public String educationSubmit(@ModelAttribute("addeducation") Educations education, BindingResult bindingResult) {
